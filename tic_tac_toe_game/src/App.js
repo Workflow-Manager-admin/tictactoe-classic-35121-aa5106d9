@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
+import TicTacToeClassic from './TicTacToeClassic';
 
+// PUBLIC_INTERFACE
 function App() {
   return (
     <div className="app">
@@ -16,18 +18,8 @@ function App() {
       </nav>
 
       <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">tic_tac_toe_game</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
+        <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', minHeight: '100vh', paddingTop: 120 }}>
+          <TicTacToeClassic />
         </div>
       </main>
     </div>
